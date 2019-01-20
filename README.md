@@ -1,7 +1,7 @@
 # M2__-ProductSave_module
 This magento2 module stores the intended values into my custom attributes when a product is saved from admin.
 
-Description: On event "catalog_product_save_commit_after" an observer class is called, which stores data in three custom Product attributes. Which data needs to be stored? its decided by checking another existing attribute "UPC" or we can call it as gitin code of product. The attributes are used in the xml of google feed which will supply identifier_exist as false, no MPN code and brand name when there is no UPC code or GTIN value available for a product.
+Description: On event "catalog_product_save_commit_after" an observer class is called, which stores data in three custom Product attributes. Which data needs to be stored? its decided by checking another existing attribute "UPC" (or we can call it as gitin code of product). The attributes are used in the xml of google feed which will supply identifier_exist as false, no MPN code and brand name when there is no UPC code or GTIN value available for a product.
 
 When this attribute "UPC" is empty.
 ![screenshot_2019-01-20 oil rubbed bronze stainless steel cover for ob-afpp-24 24 x 8 rectangular drop-in fire pit pan prod 1](https://user-images.githubusercontent.com/18115022/51439629-f463a800-1cde-11e9-95c0-af856a2bf7e7.png)
